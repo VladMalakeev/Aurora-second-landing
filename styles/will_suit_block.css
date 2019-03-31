@@ -1,0 +1,46 @@
+#will_suit_block{
+    min-height: 100vh;
+    width: 100%;
+    padding: 10px;
+}
+
+#will_suit_container{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.will_suit_element{
+    max-width: 550px;
+    display: flex;
+    flex-direction: row;
+    margin:15px 0;
+    font-weight: bold;
+    min-height:25%;
+}
+will_suit_elements{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.will_suit_img img{
+    width: 60px;
+}
+
+
+
+.will_suit_text{
+    padding:0 15px;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 480px) {
+
+    .will_suit_img img{
+        width: 40px;
+    }
+}

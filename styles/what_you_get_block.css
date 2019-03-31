@@ -1,0 +1,55 @@
+#what_you_get_block{
+    min-height: 100vh;
+    width: 100%;
+    padding: 15px;
+}
+
+#what_you_get_container{
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.what_you_get_element{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px auto;
+}
+
+
+.what_you_get_image svg{
+    width: 80px;
+    height: 80px;
+    padding: 15px;
+    background: white;
+    border-radius: 50%;
+}
+
+.what_you_get_header{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    margin: 10px;
+}
+
+.what_you_get_description{
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 1024px){
+    .what_you_get_element {
+        width: 45%;
+    }
+}
+
+@media (max-width: 670px){
+    .what_you_get_element {
+        width: 90%;
+    }
+}

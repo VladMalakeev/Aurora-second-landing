@@ -1,0 +1,134 @@
+#header{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    transition: 0.7s;
+    z-index: 20;
+}
+
+#header_agile_block{
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#humburger_menu{
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    display: none;
+}
+
+.logo{
+    width: 150px;
+}
+
+.logo img {
+    width: 100%;
+}
+#header_social_block{
+    margin: 10px 0;
+}
+.social_link{
+    margin: 10px;
+}
+
+.social_link:hover{
+    text-decoration: none;
+}
+
+.social_link svg{
+    transition: 0.3s;
+}
+
+.social_link svg:hover{
+    transform: scale(1.1);
+}
+
+.youtube_icon{
+    width: 32px;
+    height: 23px;
+    fill: white;
+}
+
+.instagram_icon{
+    width: 23px;
+    height: 23px;
+    fill: white;
+}
+
+.telegram_icon{
+    width: 25px;
+    height: 23px;
+    fill: white;
+}
+#header_button button{
+    border: none;
+    background: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+
+#header_button button:hover{
+    background: rgba(255, 255, 255, 0.81);
+    transition: 0.3s;
+}
+
+#header_button button:focus{
+    border: none;
+}
+
+.navigation_link{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.navigation_link:hover{
+   box-shadow: 0 1px 0px white;
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 1080px){
+    #header_agile_block{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 900px){
+    #header_agile_block{
+            width: auto;
+    }
+}
+
+@media (max-width: 764px){
+    #navigation_block{
+        display: none;
+    }
+    #header_social_block{
+        display: none;
+    }
+    #header_button{
+        display: none;
+    }
+
+    #humburger_menu{
+        display: block;
+    }
+    .logo{
+        width: 200px;
+    }
+
+}
