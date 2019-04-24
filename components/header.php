@@ -16,10 +16,10 @@
         <div class="logo"><a onclick="closeMenu(true)" href="#start_block"><img src="images/logo.png"></a></div>
 
         <div id="navigation_block">
-            <a onclick="closeMenu(true)"  class="navigation_link" href="#what_you_get_block">Обучение</a>
-            <a onclick="closeMenu(true)"  class="navigation_link" href="#curators_block">Авторы</a>
-            <a onclick="closeMenu(true)"  class="navigation_link" href="#reviews_block">Отзывы</a>
-            <a onclick="closeMenu(true)"  class="navigation_link" href="#videos_block">Контакты</a>
+            <a onclick="closeMenu(true)"  class="navigation_link" href="#what_you_get_block"><? echo $HEADER_STUDY ?></a>
+            <a onclick="closeMenu(true)"  class="navigation_link" href="#curators_block"><? echo $HEADER_AUTHORS ?></a>
+            <a onclick="closeMenu(true)"  class="navigation_link" href="#reviews_block"><? echo $HEADER_REVIEWS ?></a>
+            <a onclick="closeMenu(true)"  class="navigation_link" href="#videos_block"><? echo $HEADER_CONTACTS ?></a>
         </div>
     </div>
 

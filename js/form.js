@@ -5,7 +5,16 @@ function checkForm(form) {
     countErrors = checkName(element.name,countErrors);
     countErrors = checkEmail(element.email,countErrors);
     countErrors = checkPhone(element.phone,countErrors);
-
+    var days=null;
+    switch ( element.days.value) {
+        case '/7days/':days = '7 дней'; break;
+        case '/21days/':days = '21 день'; break;
+        case '/':days = '21 день'; break;
+        default: days = 'ошибка';
+    }
+    var viber = element.viber.checked?'есть':'нет';
+    var telegram = element.telegram.checked?'есть':'нет';
+console.log(days);
         if(countErrors==0){
             $.ajax({
                type:"POST",
@@ -16,6 +25,9 @@ function checkForm(form) {
                    email:element.email.value,
                    phone:element.phone.value,
                    message:element.comment.value,
+                   viber:viber,
+                   telegram:telegram,
+                   days:days,
                    token:element.token.value
                },
                 success:(result)=>{
@@ -40,7 +52,6 @@ function showMessage(status, text) {
     if(status == 'true'){
         document.getElementById('hide_container').style.display = 'none';
         document.getElementById('thanks_text').style.display = 'flex';
-        fbq('track', 'Subscribe');
     }
 }
 

@@ -42,9 +42,12 @@
     color: white;
     font-size: 1rem;
     border:none;
+    text-decoration: none;
 }
 .video_button:hover{
     background: #d0ab31;
+    color: white;
+    text-decoration: none;
 }
 .video_button:focus{
     outline: none;

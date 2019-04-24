@@ -1,5 +1,4 @@
 #curators_block{
-    min-height: 100vh;
     width: 100%;
     padding: 30px;
 }
@@ -15,13 +14,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
-
 }
 
 .curators_element{
-    width: 340px;
-    margin: 25px auto;
     padding: 10px;
     text-decoration: none;
     color: black;
@@ -37,25 +32,48 @@
 
 .curators_element_image{
     width: 100%;
-    height: 400px;
     background-size:cover;
     box-shadow: 0 0 3px black;
 }
 
 #vlad{
-    background: url("../images/Vlad.jpg");
+    background: url("../images/VladNew.png");
+    background-size:cover;
+    height: 400px;
+    background-position: center;
 }
 
 #kirill{
     background: url("../images/Kirill.jpg");
+    background-size:cover;
+    height: 450px;
+    background-position: center;
 }
 
 #oleg{
     background: url("../images/Oleg.jpg");
     background-size: cover;
     background-position-y: -30px;
+    height: 400px;
+    background-position: center;
 }
 
+#first{
+    order:2;
+    width: 320px;
+    margin: 50px auto;
+}
+
+#second{
+    order:1;
+    width: 360px;
+    margin: 25px auto;
+}
+#third{
+    order:3;
+    width: 320px;
+    margin: 50px auto;
+}
 
 .curators_element_title{
     color: #202021;
@@ -65,15 +83,51 @@
     margin: 5px;
 }
 
+.curators_element_title_main{
+    color: #202021;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 5px;
+}
+
 .curators_element_subtitle{
     text-align: center;
     font-size: 1rem;
     color: #79797c;
 }
 
+.curators_element_subtitle_main{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #3a3a3b;
+    font-weight: bold;
+}
+
 .curators_element_description{
     text-align: center;
     font-size: 1.2rem;
+}
+.curators_element_description_main{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 1080px){
+    #curators_container{
+        flex-direction: column;
+    }
+
+    #first{
+        order:2;
+    }
+
+    #second{
+        order:1;
+    }
+    #third{
+        order:3;
+    }
 }
 @media (max-width: 760px){
     #curators_description{
@@ -87,4 +141,18 @@
     .curators_element{
         padding: 10px;
     }
+}
+
+@media (max-width: 360px){
+    #first{
+        width: 100%;
+    }
+
+    #second{
+        width: 100%;
+    }
+    #third{
+        width: 100%;
+    }
+
 }

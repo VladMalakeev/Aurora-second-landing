@@ -1,7 +1,7 @@
 <div id="how_it_work_block" class="black_color">
-    <p class="white_header">Как это работает</p>
+    <p class="white_header"><? echo $HOW_IT_WORK_HEADER ?></p>
     <p id="how_it_work_description">
-        Нет-нет, никаких сложных конструкций. Ты выбираешь вариант участия и оплачиваешь его. Получив доступ к кабинету, просто следуй плану уроков и питанию. Чем проще путь - тем быстрее ты у цели.
+        <? echo $HOW_IT_WORK_DESCRIPTION ?>
     </p>
 
     <div id="how_it_work_container">
@@ -11,38 +11,38 @@
         <div id="grid_arrow_1" class="how_it_work_arrow">
         </div>
         <div id="grid_img_2" class="how_it_work_image">
-            <img src="images/hand.png">
+            <img src="images/choice.png">
         </div>
         <div id="grid_arrow_2" class="how_it_work_arrow">
         </div>
         <div id="grid_img_3" class="how_it_work_image">
-            <img src="images/help.png">
+            <img src="images/check-form.png">
         </div>
 
         <div id="grid_text_1">
             <p class="how_it_work_marker_header">
-                Шаг 1
+              <? echo $STEP_1 ?>
             </p>
             <p class="how_it_work_marker_description">
-                Выбери вариант  участия
+                <? echo $STEP_DESCRIPTION_1 ?>
             </p>
         </div>
 
         <div id="grid_text_2">
             <p class="how_it_work_marker_header">
-                Шаг 2
+                <? echo $STEP_2 ?>
             </p>
             <p class="how_it_work_marker_description">
-                Оплати его
+                <? echo $STEP_DESCRIPTION_2 ?>
             </p>
         </div>
 
         <div id="grid_text_3">
             <p class="how_it_work_marker_header">
-                Шаг 3
+                <? echo $STEP_3 ?>
             </p>
             <p class="how_it_work_marker_description">
-                Следуй за подсказками и осваивайся. Если что, мои помощники помогут разобраться
+                <? echo $STEP_DESCRIPTION_3 ?>
             </p>
         </div>
 
@@ -50,42 +50,43 @@
         </div>
 
         <div id="grid_img_4" class="how_it_work_image">
-            <img src="images/lecture.png">
+            <img src="images/support.png">
         </div>
         <div id="grid_arrow_4" class="how_it_work_arrow">
         </div>
         <div id="grid_img_5" class="how_it_work_image">
-            <img src="images/apple.png">
+            <img src="images/hand.png">
         </div>
         <div id="grid_arrow_5" class="how_it_work_arrow">
         </div>
         <div id="grid_img_6" class="how_it_work_image">
-            <img src="images/in-love.png">
+            <img src="images/call-center-operator.png">
         </div>
 
         <div id="grid_text_4">
             <p class="how_it_work_marker_header">
-                Шаг 6
+                <? echo $STEP_6 ?>
             </p>
             <p class="how_it_work_marker_description">
-                Ежедневно получай уроки и общайся с кураторами
+                <? echo $STEP_DESCRIPTION_6 ?>
             </p>
         </div>
 
         <div id="grid_text_5">
             <p class="how_it_work_marker_header">
-                Шаг 5
+                <? echo $STEP_5 ?>
             </p>
             <p class="how_it_work_marker_description">
-                Следуй своему плану питания и отправляй отчеты своему куратору</p>
+                <? echo $STEP_DESCRIPTION_5 ?>
+            </p>
         </div>
 
         <div id="grid_text_6">
             <p class="how_it_work_marker_header">
-                Шаг 4
+                <? echo $STEP_4 ?>
             </p>
             <p class="how_it_work_marker_description">
-                Наслаждайся новыми формами и  прекрасным самочувствием
+                <? echo $STEP_DESCRIPTION_4 ?>
             </p>
         </div>
 

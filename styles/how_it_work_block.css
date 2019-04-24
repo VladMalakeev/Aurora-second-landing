@@ -1,5 +1,4 @@
 #how_it_work_block{
-    min-height: 100vh;
     width: 100%;
 }
 
@@ -173,6 +172,7 @@
                 "img5" "text5" "arr5"
                 "img4" "text4";
         padding: 50px 15%;
+        grid-gap: 15px;
     }
     #how_it_work_description{
         font-size: 1.5rem;
@@ -181,4 +181,19 @@
         padding:0 10px;
         margin-top: -10px;
     }
+}
+
+.whiteButton{
+    padding: 7px 15px;
+    border-radius: 20px;
+    background: #d8b132;
+    color: white;
+    display: table;
+    margin: auto;
+}
+.whiteButton:hover{
+    text-decoration: none;
+    color: white;
+    background: rgba(232, 190, 54, 0.74);
+    cursor: pointer;
 }

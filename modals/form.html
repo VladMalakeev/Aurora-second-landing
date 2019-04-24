@@ -1,5 +1,6 @@
 <!-- Modal -->
-<div style="padding-right: 0px" class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true">
+<div style="padding-right: 0px" class="modal fade" id="formModal" tabindex="-1" role="dialog"
+     aria-labelledby="formModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -15,8 +16,8 @@
 
                 <div class="form_data">
                     <div id="thanks_text">
-                        <h2 >
-                           Благодарим Вас за заявку)
+                        <h2>
+                            Благодарим Вас за заявку)
                         </h2>
                     </div>
                     <form class="form_container" id="hide_container">
@@ -29,7 +30,7 @@
 
                         <div class="form_element">
                             <div class="form_label">
-                             <label class="label_text">E-mail</label>
+                                <label class="label_text">E-mail</label>
                             </div>
                             <input type="text" name="email" id="form_email" onchange="checkEmail(this,0)">
                         </div>
@@ -43,12 +44,29 @@
 
                         <div class="form_element">
                             <div class="form_label">
-                             <label class="label_text">Комментарий</label>
+                                <label class="label_text">Комментарий</label>
                             </div>
                             <textarea name="comment" id="form_comment"></textarea>
+
                         </div>
-                        <input type="hidden" name="token" id="form_token">
-                        <button type="button" id="form_button"  onclick="checkForm(this.form)">Отправить</button>
+
+                            <div class="form_element">
+                                <div class="form_label">
+                                    <label class="label_text">У меня есть аккаунт в:</label>
+                                </div>
+                                <div style="display:flex;justify-content: center;align-items: center">
+                                    <img src="https://www.snipstock.com/assets/cdn/png/9aa959c0b814f967d7936b89bb7c64b8.png"
+                                         width="80px" height="40px">
+                                    <input type="checkbox" name="viber">
+                                    <img src="https://www.molbulak.ru/upload/iblock/7fa/molbulak-telegram-kanal.jpg"
+                                         width="100px" height="30px">
+                                    <input type="checkbox" name="telegram">
+                                </div>
+                            </div>
+
+                            <input type="hidden" name="days" value="<?php echo $_SERVER['REQUEST_URI'] ?>" />
+                            <input type="hidden" name="token" id="form_token">
+                            <button type="button" id="form_button" onclick="checkForm(this.form)">Отправить</button>
                     </form>
                 </div>
             </div>

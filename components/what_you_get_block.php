@@ -1,5 +1,5 @@
 <div class="black_color" id="what_you_get_block">
-    <p class="white_header">Что ты получаешь</p>
+    <p class="white_header"><? echo $W_Y_G_HEADER ?></p>
 
     <div id="what_you_get_container">
 
@@ -15,11 +15,11 @@
             </div>
 
             <p class="what_you_get_header">
-                Вкусно едим
+            <? echo $W_Y_G_1_TITLE ?>
             </p>
 
             <p class="what_you_get_description">
-                Поймете, что правильное питание - это очень просто и вкусно
+                <? echo $W_Y_G_1_DESCRIPTION ?>
             </p>
 
         </div>
@@ -34,11 +34,11 @@
             </div>
 
             <p class="what_you_get_header">
-                Поддержка
+                <? echo $W_Y_G_2_TITLE ?>
             </p>
 
             <p class="what_you_get_description">
-                Получите ежедневную поддержку кураторов и новых друзей по марафону
+                <? echo $W_Y_G_2_DESCRIPTION ?>
             </p>
 
         </div>
@@ -53,11 +53,11 @@
             </div>
 
             <p class="what_you_get_header">
-                Шикарное настроение
+                <? echo $W_Y_G_3_TITLE ?>
             </p>
 
             <p class="what_you_get_description">
-                Прекрасное настроение станет Вашим постоянным спутником
+                <? echo $W_Y_G_3_DESCRIPTION ?>
             </p>
 
         </div>
@@ -73,15 +73,14 @@
             </div>
 
             <p class="what_you_get_header">
-                Волшебный пендель
+                <? echo $W_Y_G_4_TITLE ?>
             </p>
 
             <p class="what_you_get_description">
-                "Перезапустите" свой организм и узнаете, как это приятно, чувствовать себя здоровым и энергичным!
+                <? echo $W_Y_G_4_DESCRIPTION ?>
             </p>
 
         </div>
-        <!--        ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
         <div class="what_you_get_element">
 
@@ -92,15 +91,14 @@
             </div>
 
             <p class="what_you_get_header">
-                Ответы
+                <? echo $W_Y_G_5_TITLE ?>
             </p>
 
             <p class="what_you_get_description">
-                Вы получите ответы на самые актуальные вопросы по питанию, стоп-продуктам, нутриентам, и настоящим причинам многих заболеваний
+                <? echo $W_Y_G_5_DESCRIPTION ?>
             </p>
 
         </div>
-        <!--        ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
         <div class="what_you_get_element">
              <div class="what_you_get_image">
@@ -110,14 +108,13 @@
             </div>
 
             <p class="what_you_get_header">
-                Комфорт
+                <? echo $W_Y_G_6_TITLE ?>
             </p>
 
             <p class="what_you_get_description">
-                Плавный переход к новому образу жизни, без агрессивных и стрессовых методов
+                <? echo $W_Y_G_6_DESCRIPTION ?>
             </p>
 
         </div>
-        <!--        ~~~~~~~~~~~~~~~~~~~~~~~~~-->
     </div>
 </div>

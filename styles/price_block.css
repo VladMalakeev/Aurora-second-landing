@@ -1,5 +1,4 @@
 #price_block{
-    min-height: 100vh;
     width: 100%;
     padding: 30px;
 }
@@ -15,17 +14,18 @@
 .price_wrap{
     padding: 10px;
     margin:25px;
+    display: flex;
 }
 
 .price_element{
-    width: 340px;
-    height: 600px;
+    width: 400px;
     background: #F0D36D;
     text-align: center;
-    padding: 35px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
 }
 
 
@@ -49,16 +49,19 @@
 
 .price_button_block{
     text-align: center;
+    margin-top: 70px;
 }
 
 .price_button{
     background: black;
-    padding: 10px 15px;
+    padding: 15px 15px;
     border-radius: 20px;
+    margin: auto;
     font-weight: bold;
     color: white;
-    font-size: 1rem;
+    font-size: 1.3rem;
     border: none;
+    width: 90%;
     transition: 0.5s;
 }
 
@@ -68,16 +71,73 @@
 .price_button:focus{
     outline: none;
 }
+.referalsBlock{
+    margin: 25px auto;
+    width: 90%;
+    padding: 15px;
+    background: white;
+}
+.referalHeader{
+    font-size: 4.3vh;
+    color: #1B1B1C;
+    text-align: center;
+    font-weight: bold;
+    font-family: Roboto, Helvetica, Verdana, sans-serif;
+}
+
+.referalText{
+    font-style:italic;
+    font-family: Roboto, Helvetica, Verdana, sans-serif;
+    font-size: 4vh;
+    color: #1B1B1C;
+    text-align: center;
+}
+.discount{
+    color: red;
+    font-size: 4.1vh;
+}
+.timerTextStart{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    font-size: 2.5rem;
+}
+.timerTextDescription{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    font-size: 2rem;
+}
+#timer{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 @media (max-width: 760px){
     #price_block{
-        padding: 0px;
+        padding: 10px 0px;
+    }
+    .referalsBlock{
+        width: auto;
+        margin: 25px 10px;
     }
 }
 
-@media (max-width: 320px){
+@media (max-width: 400px){
     .price_element{
-        width: 300px;
+        width: 100%;
+        padding: 20px 0;
 
     }
+    .price_wrap{
+        padding: 0;
+        margin: 25px 10px;
+    }
+
 }

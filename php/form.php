@@ -4,7 +4,9 @@ if(isset($_POST['submit'])){
     $email = $_POST['email'];
     $phone = $_POST['phone'];
     $text = $_POST['message'];
-
+    $checkViber = $_POST['viber'];
+    $checkTelegram = $_POST['telegram'];
+    $days = $_POST['days'];
     //токен recaptcha
     $token = $_POST['token'];
     $secret = "6Lfgw5QUAAAAAO9PeUkh0H5A4MEhLxqcVLDyucaY";
@@ -17,7 +19,14 @@ if(isset($_POST['submit'])){
     $account ="mail@alphabet-of-health.com";
     $subject = "Новая заявка от пользователя";
     $subject = '=?utf-8?b?'. base64_encode($subject) .'?=';
-    $message = "Новая заявка:\n Имя - $name, \n Email: $email,\n Телефон: $phone,\n Комментарий: $text";
+    $message = "Новая заявка:\n 
+                Имя - $name, \n 
+                Email: $email,\n 
+                Телефон: $phone,\n 
+                Комментарий: $text,\n 
+                Viber: $checkViber,\n 
+                Telegram: $checkTelegram,\n
+                Длительность: $days";
 
     //Формируем заголовки для почтового сервера
     $headers  = "Content-type: text/html; charset=\"utf-8\"\r\n";

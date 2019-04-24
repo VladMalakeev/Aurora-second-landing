@@ -1,5 +1,5 @@
 <div id="reviews_block" class="white_color">
-    <p class="black_header">Отзывы наших учеников</p>
+    <p class="black_header"><? echo $REVIEWS_HEADER ?></p>
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="false" data-touch="true" data-pause="true">
         <ol class="carousel-indicators" id="carousel-indicators"></ol>
