@@ -4,7 +4,6 @@
     background: url("../images/start_image.jpg");
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
 }
 
 .gradient{
@@ -74,7 +73,11 @@
     text-decoration: none;
 }
 
-
+@media (min-width: 1024px){
+    #start_block{
+        background-position: center;
+    }
+}
 @media (max-width: 639px){
     #start_content{
         width: auto;
@@ -85,13 +88,12 @@
     #start_content{
         width: auto;
     }
-    #start_block{
-        background-position: left;
-    }
+
 }
 
 @media (min-width: 640px){
     #start_content{
         margin: 0 0 0 5%;
     }
+
 }

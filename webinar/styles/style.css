@@ -1,0 +1,385 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:  'EvolventaRegular';
+
+}
+
+#textWrap{
+    background: url('../images/14.jpeg');
+    /*min-height: 100vh;*/
+    background-size: cover;
+    background-position-x: center;
+    /*background-attachment: fixed;*/
+    align-items: center;
+    background-position: center;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#textBlock{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+}
+
+#formWrap{
+    background: url('../images/15.jpeg');
+    background-size: cover;
+    /*min-height: 100vh;*/
+    /*background-attachment: fixed;*/
+    background-position: center;
+    padding: 10px;
+}
+.blur{
+    width: 100%;
+    height: 30px;
+    margin-bottom: -20px;
+    background: url(../images/border.png);
+    background-size: contain;
+
+
+}
+.mask {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+#formBlock{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 5px;
+}
+.rombWrap{
+    margin-top: 60px;
+}
+
+.rombBlock{
+    transform: rotate(45deg);
+    border:1px solid black;
+    padding: 10px;
+    margin-bottom:60px;
+}
+
+.rombElement{
+    background: rgba(255, 255, 255, 0.76);
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rombText{
+    position: absolute;
+    transform: rotate(-45deg);
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title{
+    font-size: 1.9rem;
+    color: black;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.title_s{
+    font-size: 1.4rem;
+    color: black;
+    font-weight: bold;
+    margin-bottom:0;
+}
+
+.subTitle{
+    font-size: 1.6rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.76);
+    padding: 15px ;
+}
+.list{
+    list-style: url("../images/checked.svg");
+    padding: 10px 0 10px 10px;
+    margin: 5px 0 5px 10px;
+}
+.list li{
+    font-size: 1.6rem;
+    color: black;
+    padding: 5px 5px;
+    font-weight: bold;
+}
+
+.cursive{
+    font-size: 1.6rem;
+    color: black;
+    font-style: italic;
+    text-align: center;
+    margin: 5px;
+    font-weight: bold;
+}
+.cursive:visited{
+    color:  rgb(72, 93, 169);
+}
+.cursive a{
+    color:  rgb(72, 93, 169);
+    text-decoration: none;
+}
+.cursive a:hover{
+    color: #c54579;
+    text-decoration: underline;
+}
+
+.formTitle{
+    font-size: 2.3rem;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#submit{
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 15px;
+    width: 100%;
+    border-radius: 3px;
+    margin: 10px auto 25px auto;
+    transition: 400ms;
+    border: none;
+}
+#submit:hover{
+    cursor: pointer;
+}
+#submit:focus{
+    outline: none;
+}
+.submitActive{
+    background: #3CB371;
+}
+.submitActive:hover{
+    background: orange;
+}
+.submitDisabled{
+    background: #82AC95;
+}
+.submitDisabled:hover{
+    background: #82AC95;
+}
+
+.field{
+    width: calc(100% - 50px);
+    padding: 10px;
+    margin: 10px 15px;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+#form_phone{
+    width: calc(100% - 25px);
+    padding: 10px 60px;
+    margin: 15px;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+.fieldWrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.intl-tel-input .allow-dropdown{
+    width: 100%;
+}
+.flag-container{
+    left: 15px !important;
+}
+.checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+.checkbox p {
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+}
+.checkbox input {
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+}
+.error-message{
+    color: red;
+    text-align: center;
+    font-size: 1rem;
+    margin: 5px 15px;
+    font-weight: bold;
+    padding: 5px;
+    background: #ffffffd6;
+}
+figcaption{
+    color:black !important;
+}
+#alert{
+    display: none;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    position: fixed;
+    top: 0;
+    width:calc(100% - 30px);
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.36);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#message{
+    padding: 10px;
+    width: 70%;
+    height: 70vh;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 3px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+#message img{
+    margin-top: 70px;
+}
+#messageText{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+#blockClose{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#buttonClose{
+    background: #1b6bc4;
+    color:white;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+#buttonClose:hover{
+    background: dodgerblue;
+}
+
+@media( max-width: 1080px){
+    #textBlock{
+        width: 70%;
+    }
+    #formBlock {
+        width: 70%;
+    }
+}
+
+@media( max-width: 780px){
+    .title {
+        font-size: 2rem;
+    }
+    .formTitle {
+        font-size: 2rem;
+    }
+    .subTitle {
+        font-size: 1.3rem;
+    }
+    .list li{
+        font-size: 1.3rem;
+    }
+
+    .cursive {
+        font-size: 1.3rem;
+    }
+}
+
+@media( max-width: 680px){
+    .title {
+        font-size: 1.5rem;
+    }
+    .title_s {
+        font-size: 1.3rem;
+    }
+    #textBlock{
+        width: 80%;
+    }
+    #formBlock {
+        width: 80%;
+    }
+    .rombElement{
+        width: 260px;
+        height: 260px;
+    }
+}
+
+@media( max-width: 480px){
+    #textBlock{
+        width: 90%;
+        margin: 30px 15px;
+    }
+    #formBlock {
+        width: 90%;
+    }
+    .title {
+        font-size: 1.3rem;
+    }
+    .formTitle {
+        font-size: 1.5rem;
+    }
+    .rombElement{
+        width: 220px;
+        height: 220px;
+    }
+    #message img{
+        width: 100px;
+        margin-top: 70px;
+    }
+    #blockClose{
+        justify-content: center;
+    }
+}
+
+@media( max-width: 368px){
+    .title {
+        font-size: 1.2rem;
+    }
+    .title_s {
+        font-size: 1.1rem;
+    }
+    .rombElement{
+        width: 190px;
+        height: 190px;
+    }
+}

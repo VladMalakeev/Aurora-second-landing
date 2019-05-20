@@ -48,12 +48,6 @@ var comment_4 = ' <div class="reviews_comment black_color">\n' +
     '                            <p class="white_review_header">Елена, 25 лет</p>\n' +
     '                        </div>\n' +
     '                    </div>';
-var screen_1 = ' <div class="reviews_comment_screen">\n' +
-    '                         <img class="review_screen" src="images/screen1.jpg">\n' +
-    '                    </div>';
-var screen_2 = ' <div class="reviews_comment_screen">\n' +
-    '                         <img class="review_screen" src="images/screen2.jpg">\n' +
-    '                    </div>';
 var screenArray = [];
 for(let i = 1;i<24;i++){
     let screen = '<div class="reviews_comment_screen">\n' +

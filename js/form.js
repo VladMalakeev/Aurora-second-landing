@@ -52,6 +52,7 @@ function showMessage(status, text) {
     if(status == 'true'){
         document.getElementById('hide_container').style.display = 'none';
         document.getElementById('thanks_text').style.display = 'flex';
+        document.location.href="http://alphabet-of-health.com/success/";
     }
 }
 

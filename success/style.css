@@ -1,0 +1,78 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1B1B1C;
+    padding: 15px;
+}
+
+#header img{
+    width: 250px;
+    height: auto;
+}
+
+#content{
+    font-family: Roboto, Helvetica, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#1B1B1C;
+}
+#socLink{
+    border: 2px solid #1B1B1C;
+    border-radius: 5px;
+    padding: 50px;
+    margin: 15px;
+
+}
+#socLinkBlock{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#socText{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Roboto, Helvetica, Verdana, sans-serif;
+}
+
+.social_link{
+    fill:#1B1B1C;
+    transition: 300ms;
+}
+
+.social_link:hover{
+    transform: scale(1.1);
+}
+.youtube_icon{
+    width: 50px;
+    height: auto;
+}
+.instagram_icon{
+    width: 50px;
+    height: 40px;
+}
+.telegram_icon{
+    width: 50px;
+    height: auto;
+}
+#userForm{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formText{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #525255;
+    font-family: Roboto, Helvetica, Verdana, sans-serif;
+}

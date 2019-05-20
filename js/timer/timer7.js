@@ -1,6 +1,9 @@
 var fontSize = $(window).width()<520?28:48;
+var time = document.getElementById('timer7Time').value;
+var date = document.getElementById('timer7Date').value;
+console.log(date+'T'+time);
 $('.timerScript').timeTo({
-    timeTo: new Date('2019-05-10T23:59:59'),
+    timeTo: new Date(date+'T'+time),
     countdown: true,
     displayDays: 2,
     theme: "white",

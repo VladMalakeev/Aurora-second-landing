@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.formWrap{
+    display: flex;
+    justify-content: center;
+}
+
+.formElement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+h1{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.b1{
+    background: whitesmoke;
+    padding: 20px;
+}
+.b2{
+    background: #ededed;
+    padding: 20px;
+}
+.exit{
+    position: fixed;
+    margin: 10px;
+    background: dodgerblue;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+.exit:hover{
+    background: #186bbf;
+}
+.submit{
+    border-radius: 5px;
+    background: limegreen;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.submit:hover{
+    background: #2cae2c;
+}
+input{
+    text-align: center;
+}

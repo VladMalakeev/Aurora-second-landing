@@ -39,6 +39,7 @@
 <body>
 
 <?php
+include('php/request.php');
 include('texts.php');
 include('components/header.php');                  //0.шапка сайта
 include('components/start_block.php');                //1.титульная страница
@@ -72,7 +73,19 @@ include('modals/form.html');
 <script src="js/timer/jquery.time-to.js"></script>
 <script src="js/timer/timer21.js"></script>
 <script src="js/recaptcha.js"></script>
-<script src="js/intlTellnputSettings.js"></script>
+<script>
+    $("#form_phone").intlTelInput({
+        initialCountry: "auto",
+        geoIpLookup: function(callback) {
+            jQuery.get('https://ipinfo.io', function() {}, "jsonp").always(function(resp) {
+                var countryCode = (resp && resp.country) ? resp.country : "";
+                callback(countryCode);
+            });
+        },
+        preferredCountries: ['ua', 'ru'],
+        utilsScript: "js/utils.js"
+    });
+</script>
 
 </body>
 </html>

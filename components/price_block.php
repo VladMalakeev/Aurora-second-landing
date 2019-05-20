@@ -48,6 +48,8 @@
     <div id="timer">
         <h1 class="timerTextStart"><? echo $PRICE_21_DAYS_TIMER_START ?></h1>
         <h2 class="timerTextDescription"><? echo $PRICE_DAYS_TIMER_DESCRIPTION ?></h2>
+        <input id="timer21Date" type="hidden" value="<? echo $days21data['date'] ?>"/>
+        <input id="timer21Time" type="hidden" value="<? echo $days21data['time'] ?>"/>
         <div class="timerScript"></div>
     </div>
     <div class="referalsBlock">
